@@ -1,0 +1,32 @@
+[2026-11-10T19:01:50.847-03:00] início: 02_gerar_embeddings | comando: 02_gerar_embeddings.py | log: <repo>/evidencias/logs/20261110-190150_02_gerar_embeddings.log
+101000 chunks, modelo bge-m3, lote 64, 21 partes
+ollama ps (modelo carregado):
+NAME             ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+bge-m3:latest    790764642607    1.2 GB    100% GPU     4096       29 minutes from now    
+
+[2026-11-10T19:01:51.487-03:00] embeddings: inicio n=101000 modelo=bge-m3
+[2026-11-10T19:01:51.493-03:00] monitor de GPU ligado -> <repo>/evidencias/gpu/20261110-190151_embeddings.csv
+  parte 1/21 já existe, pulando
+  parte 2/21 já existe, pulando
+  parte 3/21 já existe, pulando
+  parte 4/21 já existe, pulando
+  parte 5/21 já existe, pulando
+  parte 6/21 já existe, pulando
+  parte 7/21 já existe, pulando
+  parte 8/21 já existe, pulando
+  parte 9/21 já existe, pulando
+  parte 10/21 já existe, pulando
+  parte 11/21 já existe, pulando
+  parte 12/21 já existe, pulando
+  parte 13/21 já existe, pulando
+  parte 14/21 já existe, pulando
+  parte 15/21 já existe, pulando
+  parte 16/21 já existe, pulando
+  parte 17/21 já existe, pulando
+  parte 18/21 já existe, pulando
+  parte 19/21 já existe, pulando
+  parte 20/21 já existe, pulando
+  parte 21/21 já existe, pulando
+[2026-11-10T19:01:52.567-03:00] monitor de GPU desligado
+[2026-11-10T19:01:52.571-03:00] embeddings: fim gerados=0 s=1.1
+Salvo em <repo>/dados/vetores.npy: (101000, 1024), 414 MB

@@ -1,0 +1,26 @@
+[2026-11-10T18:33:41.966-03:00] início: 01_preparar_dados | comando: 01_preparar_dados.py | log: <repo>/evidencias/logs/20261110-183341_01_preparar_dados.log
+[2026-11-10T18:33:41.972-03:00] download_chunking: inicio alvo=101000
+README.md:   0%|          | 0.00/131k [00:00<?, ?B/s]README.md: 100%|##########| 131k/131k [00:00<00:00, 216MB/s]
+  2000 artigos lidos, 36178 chunks
+  4000 artigos lidos, 48375 chunks
+  6000 artigos lidos, 64667 chunks
+  8000 artigos lidos, 81241 chunks
+  10000 artigos lidos, 90829 chunks
+[2026-11-10T18:33:57.950-03:00] download_chunking: fim chunks=101000 artigos=11827 s=12.4
+
+Artigos lidos: 11827
+Chunks: 101000 (corpus=100000, consultas=1000)
+Tamanho médio do chunk: 782 caracteres
+Distribuição por categoria:
+cat
+cat_0     9351
+cat_1    10433
+cat_2     9943
+cat_3    10548
+cat_4     9697
+cat_5    10554
+cat_6     9427
+cat_7    10415
+cat_8    10021
+cat_9    10611
+Salvo em <repo>/dados/chunks.parquet (12.4 s)

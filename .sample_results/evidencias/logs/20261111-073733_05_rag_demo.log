@@ -1,0 +1,20 @@
+[2026-11-11T07:37:33.193-03:00] início: 05_rag_demo | comando: 05_rag_demo.py -i | log: <repo>/evidencias/logs/20261111-073733_05_rag_demo.log
+[2026-11-11T07:37:33.298-03:00] rag: inicio interativo
+[2026-11-11T07:37:33.307-03:00] monitor de GPU ligado -> <repo>/evidencias/gpu/20261111-073733_rag.csv
+Modo interativo: digite a pergunta e Enter (Enter vazio encerra e salva).
+
+pergunta> 
+=== Quando o Brasil foi Descoberto?
+[chroma] Quando o Brasil foi Descoberto? | busca 212.4 ms | LLM 38.78 s (68.2 tok/s)
+  trechos: [1] História do Brasil (0.76) | [2] Brasil (0.70) | [3] 1500 (0.69) | [4] Bahia (0.67) | [5] Pedro Álvares Cabral (0.66)
+  resposta (chroma): O Brasil foi oficialmente descoberto pelos portugueses em 22 de abril de 1500, em expedição liderada por Pedro Álvares Cabral. No entanto, segundo alguns historiadores, o navegador espanhol Vicente Yáñez Pinzón chegou ao Brasil três meses antes, em 26 de janeiro de 1500. [1][2]
+
+[qdrant] Quando o Brasil foi Descoberto? | busca 7.9 ms | LLM 1.52 s (65.3 tok/s)
+  trechos: [1] História do Brasil (0.76) | [2] Brasil (0.70) | [3] 1500 (0.69) | [4] Bahia (0.67) | [5] Pedro Álvares Cabral (0.66)
+  resposta (qdrant): O Brasil foi oficialmente descoberto pelos portugueses em 22 de abril de 1500, em expedição liderada por Pedro Álvares Cabral. No entanto, segundo alguns historiadores, o navegador espanhol Vicente Yáñez Pinzón chegou ao Brasil três meses antes, em 26 de janeiro de 1500. [1][2]
+
+
+pergunta> [2026-11-11T07:38:41.636-03:00] monitor de GPU desligado
+[2026-11-11T07:38:41.640-03:00] rag: fim
+
+Salvo em <repo>/evidencias/rag_demo_20261111-073841.md

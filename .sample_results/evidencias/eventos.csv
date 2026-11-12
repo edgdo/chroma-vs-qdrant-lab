@@ -1,0 +1,63 @@
+timestamp,script,fase,acao,extra
+2026-11-10T18:33:41.971-03:00,01,download_chunking,inicio,alvo=101000
+2026-11-10T18:33:57.949-03:00,01,download_chunking,fim,chunks=101000 artigos=11827 s=12.4
+2026-11-10T18:37:49.252-03:00,02,embeddings,inicio,n=101000 modelo=bge-m3
+2026-11-10T18:59:27.997-03:00,02,embeddings,fim,gerados=101000 s=1169.7
+2026-11-10T19:01:51.486-03:00,02,embeddings,inicio,n=101000 modelo=bge-m3
+2026-11-10T19:01:52.570-03:00,02,embeddings,fim,gerados=0 s=1.1
+2026-11-10T19:02:02.383-03:00,03,gabarito,inicio,consultas=1000 base=100000
+2026-11-10T19:02:03.386-03:00,03,gabarito,fim,s=1.0
+2026-11-10T19:02:59.212-03:00,03,gabarito,inicio,consultas=1000 base=100000
+2026-11-10T19:03:00.320-03:00,03,gabarito,fim,s=1.1
+2026-11-10T19:05:07.935-03:00,04,outras_vms_no_host,estado,"{'vm-vizinha-1': 'desligada/sem resposta', 'vm-vizinha-2': 'desligada/sem resposta', 'vm-vizinha-3': 'desligada/sem resposta', 'vm-vizinha-4': 'desligada/sem resposta'}"
+2026-11-10T19:05:08.065-03:00,04,ingestao_chroma_r1,inicio,
+2026-11-10T19:07:38.401-03:00,04,ingestao_chroma_r1,fim,insert_s=136.0 total_s=136.0 {'pontos': 100000}
+2026-11-10T19:07:38.419-03:00,04,latencia_chroma_r1,inicio,
+2026-11-10T19:08:50.328-03:00,04,latencia_chroma_r1,fim,
+2026-11-10T19:08:50.332-03:00,04,qps_chroma_r1,inicio,
+2026-11-10T19:09:14.372-03:00,04,qps_chroma_r1,fim,
+2026-11-10T19:09:25.045-03:00,04,ingestao_qdrant_r1,inicio,
+2026-11-10T19:11:50.998-03:00,04,ingestao_qdrant_r1,fim,"insert_s=85.1 total_s=131.6 {'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"
+2026-11-10T19:11:51.016-03:00,04,latencia_qdrant_r1,inicio,
+2026-11-10T19:12:12.191-03:00,04,latencia_qdrant_r1,fim,
+2026-11-10T19:12:12.194-03:00,04,qps_qdrant_r1,inicio,
+2026-11-10T19:12:29.951-03:00,04,qps_qdrant_r1,fim,
+2026-11-10T19:12:58.563-03:00,04,ingestao_chroma_r2,inicio,
+2026-11-10T19:15:50.784-03:00,04,ingestao_chroma_r2,fim,insert_s=154.3 total_s=154.3 {'pontos': 100000}
+2026-11-10T19:15:50.800-03:00,04,latencia_chroma_r2,inicio,
+2026-11-10T19:17:03.022-03:00,04,latencia_chroma_r2,fim,
+2026-11-10T19:17:03.027-03:00,04,qps_chroma_r2,inicio,
+2026-11-10T19:17:23.689-03:00,04,qps_chroma_r2,fim,
+2026-11-10T19:17:37.989-03:00,04,ingestao_qdrant_r2,inicio,
+2026-11-10T19:20:08.027-03:00,04,ingestao_qdrant_r2,fim,"insert_s=85.5 total_s=135.7 {'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"
+2026-11-10T19:20:08.042-03:00,04,latencia_qdrant_r2,inicio,
+2026-11-10T19:20:25.628-03:00,04,latencia_qdrant_r2,fim,
+2026-11-10T19:20:25.631-03:00,04,qps_qdrant_r2,inicio,
+2026-11-10T19:20:47.217-03:00,04,qps_qdrant_r2,fim,
+2026-11-10T19:21:35.322-03:00,04,ingestao_chroma_r3,inicio,
+2026-11-10T19:25:00.693-03:00,04,ingestao_chroma_r3,fim,insert_s=182.6 total_s=183.9 {'pontos': 100000}
+2026-11-10T19:25:00.709-03:00,04,latencia_chroma_r3,inicio,
+2026-11-10T19:26:24.437-03:00,04,latencia_chroma_r3,fim,
+2026-11-10T19:26:24.441-03:00,04,qps_chroma_r3,inicio,
+2026-11-10T19:26:48.514-03:00,04,qps_chroma_r3,fim,
+2026-11-10T19:26:59.207-03:00,04,ingestao_qdrant_r3,inicio,
+2026-11-10T19:28:39.595-03:00,04,ingestao_qdrant_r3,fim,"insert_s=40.4 total_s=89.6 {'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"
+2026-11-10T19:28:39.610-03:00,04,latencia_qdrant_r3,inicio,
+2026-11-10T19:29:00.454-03:00,04,latencia_qdrant_r3,fim,
+2026-11-10T19:29:00.458-03:00,04,qps_qdrant_r3,inicio,
+2026-11-10T19:29:17.957-03:00,04,qps_qdrant_r3,fim,
+2026-11-10T20:59:27.779-03:00,04,outras_vms_no_host,estado,"{'vm-vizinha-1': 'desligada/sem resposta', 'vm-vizinha-2': 'desligada/sem resposta', 'vm-vizinha-3': 'desligada/sem resposta', 'vm-vizinha-4': 'desligada/sem resposta'}"
+2026-11-10T20:59:29.442-03:00,04,varredura_chroma_r1,inicio,
+2026-11-10T20:59:50.901-03:00,04,varredura_chroma_r1,fim,
+2026-11-10T20:59:50.917-03:00,04,varredura_qdrant_r1,inicio,
+2026-11-10T21:00:04.187-03:00,04,varredura_qdrant_r1,fim,
+2026-11-10T21:00:04.412-03:00,04,varredura_chroma_r2,inicio,
+2026-11-10T21:00:26.953-03:00,04,varredura_chroma_r2,fim,
+2026-11-10T21:00:26.968-03:00,04,varredura_qdrant_r2,inicio,
+2026-11-10T21:00:40.124-03:00,04,varredura_qdrant_r2,fim,
+2026-11-10T21:00:40.355-03:00,04,varredura_chroma_r3,inicio,
+2026-11-10T21:01:01.788-03:00,04,varredura_chroma_r3,fim,
+2026-11-10T21:01:01.803-03:00,04,varredura_qdrant_r3,inicio,
+2026-11-10T21:01:15.731-03:00,04,varredura_qdrant_r3,fim,
+2026-11-11T07:37:33.297-03:00,05,rag,inicio,interativo
+2026-11-11T07:38:41.639-03:00,05,rag,fim,

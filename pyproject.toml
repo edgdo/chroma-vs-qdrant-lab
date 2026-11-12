@@ -1,0 +1,15 @@
+[project]
+name = "bda-bench"
+version = "0.1.0"
+description = "Benchmark Chroma x Qdrant com embeddings bge-m3 na GPU (MBA FIAP, BDA)"
+requires-python = ">=3.12"
+dependencies = [
+    "chromadb-client==1.5.9",
+    "qdrant-client==1.20.0",
+    "datasets",
+    "numpy",
+    "pandas",
+    "pyarrow",
+    "matplotlib",
+    "requests",
+]

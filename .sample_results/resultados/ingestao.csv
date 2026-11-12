@@ -1,0 +1,7 @@
+banco,rodada,n,insert_s,indice_pronto_s,vetores_por_s,info
+chroma,1,100000,135.99,136.0,735.3,{'pontos': 100000}
+qdrant,1,100000,85.07,131.62,759.8,"{'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"
+chroma,2,100000,154.29,154.3,648.1,{'pontos': 100000}
+qdrant,2,100000,85.46,135.71,736.9,"{'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"
+chroma,3,100000,182.63,183.87,543.9,{'pontos': 100000}
+qdrant,3,100000,40.44,89.64,1115.6,"{'pontos': 100000, 'vetores_indexados': 100000, 'segmentos': 2}"

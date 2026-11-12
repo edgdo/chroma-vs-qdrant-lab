@@ -1,0 +1,4 @@
+[2026-11-10T19:02:00.322-03:00] início: 03_gabarito | comando: 03_gabarito.py | log: <repo>/evidencias/logs/20261110-190200_03_gabarito.log
+[2026-11-10T19:02:02.385-03:00] gabarito: inicio consultas=1000 base=100000
+[2026-11-10T19:02:03.386-03:00] gabarito: fim s=1.0
+Gabarito: (1000, 10), gabarito com filtro: (1000, 10)

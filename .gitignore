@@ -1,0 +1,9 @@
+# saídas geradas na execução (os resultados de exemplo ficam em .sample_results/)
+/dados/
+/evidencias/
+/resultados/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env

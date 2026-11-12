@@ -1,0 +1,111 @@
+[2026-11-10T18:21:24.581-03:00] início: 00_manifesto | comando: 00_manifesto.py | log: <repo>/evidencias/logs/20261110-182124_00_manifesto.log
+{
+  "gerado_em": "2026-11-10T18:21:24.581-03:00",
+  "infra": {
+    "hipervisor": "Proxmox VE, nó <no-proxmox> (versão: PREENCHER com pveversion)",
+    "host_cpu": "Intel Core i7-7700K @ 4.20 GHz (4 núcleos / 8 threads, L3 8 MB)",
+    "host_memoria": "PREENCHER (free -h no host)",
+    "host_storage": "datastore vmdata: PREENCHER (tipo e disco: pvesm status; SSD/NVMe/HDD, ZFS/LVM)",
+    "provisionamento": "Terraform (provider bpg/proxmox 0.120.0), módulo ./module, clone do template 9000 (Ubuntu 24.04 cloud-init)",
+    "vms": "2 VMs idênticas (bda-chroma, bda-qdrant): 2 vCPU tipo host, 4 GiB RAM dedicada, disco 30 GB scsi0 no datastore vmdata, máquina i440fx, rede em bridge",
+    "conteineres": "Docker + Compose; chromadb/chroma:1.5.9 e qdrant/qdrant:v1.20.0, sem limite de CPU/RAM, dados em bind mount em /root/*-data",
+    "cliente": "WSL2 (Ubuntu) no PC com RTX 4080, mesma LAN <lan>/24; os bancos são testados um de cada vez"
+  },
+  "outras_vms_no_host": {
+    "vm-vizinha-1": "ligada",
+    "vm-vizinha-2": "ligada",
+    "vm-vizinha-3": "ligada",
+    "vm-vizinha-4": "ligada"
+  },
+  "host": {
+    "plataforma": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "cpu": "AMD Ryzen 7 9800X3D 8-Core Processor",
+    "gpu": "NVIDIA GeForce RTX 4080, 16376 MiB, 610.88"
+  },
+  "pacotes_python": {
+    "chromadb-client": "1.5.9",
+    "qdrant-client": "1.20.0",
+    "numpy": "2.5.4",
+    "pandas": "3.1.1",
+    "datasets": "5.2.0",
+    "matplotlib": "3.11.2",
+    "requests": "2.34.2"
+  },
+  "ollama": {
+    "versao": {
+      "version": "0.23.1"
+    },
+    "modelos": {
+      "bge-m3": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "bert",
+        "families": [
+          "bert"
+        ],
+        "parameter_size": "566.70M",
+        "quantization_level": "F16"
+      },
+      "qwen2.5:14b": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "14.8B",
+        "quantization_level": "Q4_K_M"
+      }
+    }
+  },
+  "servidores": {
+    "chroma": {
+      "versao": "1.0.0"
+    },
+    "qdrant": {
+      "title": "qdrant - vector search engine",
+      "version": "1.20.0",
+      "commit": "222b2e44ab1c3f17e8246396ead6558e45041df7"
+    }
+  },
+  "vms": {
+    "chroma": {
+      "ip": "<ip-chroma>",
+      "hostname": "bda-chroma",
+      "so": "Ubuntu 24.04.5 LTS",
+      "kernel": "6.8.0-147-generic",
+      "vcpu": "2",
+      "cpu_modelo": "Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz",
+      "cpu_topologia": "Model name: Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz\nThread(s) per core: 1\nCore(s) per socket: 2\nSocket(s): 1\nHypervisor vendor: KVM",
+      "virtualizacao": "kvm\nStandard PC (i440FX + PIIX, 1996)",
+      "memoria": "Mem:           3.8Gi       582Mi       1.1Gi       1.1Mi       2.5Gi       3.3Gi",
+      "disco": "NAME SIZE ROTA MODEL\nsda   30G    1 QEMU HARDDISK",
+      "uptime_load": "21:21:28 up 17:54,  1 user,  load average: 0.00, 0.00, 0.00",
+      "docker": "Docker version 29.9.3, build 5457199",
+      "imagem": "chromadb/chroma:1.5.9 sha256:1e0b73a187a28757c572acba508c46f48c9e8b0acaf5c20e6d95cdedce1acdf6",
+      "container": "Up 13 hours",
+      "disco_dados": "188K\t/root/chroma-data"
+    },
+    "qdrant": {
+      "ip": "<ip-qdrant>",
+      "hostname": "Host key verification failed.",
+      "so": "Host key verification failed.",
+      "kernel": "Host key verification failed.",
+      "vcpu": "Host key verification failed.",
+      "cpu_modelo": "Host key verification failed.",
+      "cpu_topologia": "Host key verification failed.",
+      "virtualizacao": "Host key verification failed.",
+      "memoria": "Host key verification failed.",
+      "disco": "Host key verification failed.",
+      "uptime_load": "Host key verification failed.",
+      "docker": "Host key verification failed.",
+      "imagem": "Host key verification failed.",
+      "container": "Host key verification failed.",
+      "disco_dados": "Host key verification failed."
+    }
+  },
+  "arquivos_dados": {}
+}
+
+Manifesto salvo em <repo>/evidencias/manifesto_20261110-182129.json

@@ -1,0 +1,42 @@
+[2026-11-10T18:37:42.023-03:00] início: 02_gerar_embeddings | comando: 02_gerar_embeddings.py | log: <repo>/evidencias/logs/20261110-183742_02_gerar_embeddings.log
+101000 chunks, modelo bge-m3, lote 64, 21 partes
+ollama ps (modelo carregado):
+NAME             ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+bge-m3:latest    790764642607    1.2 GB    100% GPU     4096       29 minutes from now    
+
+[2026-11-10T18:37:49.253-03:00] embeddings: inicio n=101000 modelo=bge-m3
+[2026-11-10T18:37:49.258-03:00] monitor de GPU ligado -> <repo>/evidencias/gpu/20261110-183749_embeddings.csv
+  parte 1/21: 5000 chunks em 62.0 s (81/s) | acumulado 5000 em 62 s
+ollama ps (durante a geração):
+NAME             ID              SIZE      PROCESSOR    CONTEXT    UNTIL               
+bge-m3:latest    790764642607    1.2 GB    100% GPU     4096       29 minutes from now    
+
+  parte 2/21: 5000 chunks em 58.1 s (86/s) | acumulado 10000 em 120 s
+  parte 3/21: 5000 chunks em 55.9 s (89/s) | acumulado 15000 em 176 s
+  parte 4/21: 5000 chunks em 60.3 s (83/s) | acumulado 20000 em 236 s
+  parte 5/21: 5000 chunks em 57.9 s (86/s) | acumulado 25000 em 294 s
+  parte 6/21: 5000 chunks em 57.4 s (87/s) | acumulado 30000 em 352 s
+  parte 7/21: 5000 chunks em 57.4 s (87/s) | acumulado 35000 em 409 s
+  parte 8/21: 5000 chunks em 59.7 s (84/s) | acumulado 40000 em 469 s
+  parte 9/21: 5000 chunks em 54.3 s (92/s) | acumulado 45000 em 523 s
+  parte 10/21: 5000 chunks em 60.1 s (83/s) | acumulado 50000 em 583 s
+  parte 11/21: 5000 chunks em 57.9 s (86/s) | acumulado 55000 em 641 s
+  parte 12/21: 5000 chunks em 56.0 s (89/s) | acumulado 60000 em 697 s
+  parte 13/21: 5000 chunks em 57.3 s (87/s) | acumulado 65000 em 754 s
+  parte 14/21: 5000 chunks em 55.6 s (90/s) | acumulado 70000 em 810 s
+  parte 15/21: 5000 chunks em 56.5 s (88/s) | acumulado 75000 em 866 s
+  parte 16/21: 5000 chunks em 57.1 s (88/s) | acumulado 80000 em 924 s
+  parte 17/21: 5000 chunks em 56.7 s (88/s) | acumulado 85000 em 980 s
+  parte 18/21: 5000 chunks em 60.2 s (83/s) | acumulado 90000 em 1040 s
+  parte 19/21: 5000 chunks em 57.2 s (87/s) | acumulado 95000 em 1098 s
+  parte 20/21: 5000 chunks em 60.4 s (83/s) | acumulado 100000 em 1158 s
+  parte 21/21: 1000 chunks em 11.7 s (86/s) | acumulado 101000 em 1170 s
+[2026-11-10T18:59:27.993-03:00] monitor de GPU desligado
+[2026-11-10T18:59:28.002-03:00] embeddings: fim gerados=101000 s=1169.7
+Traceback (most recent call last):
+  File "<repo>/02_gerar_embeddings.py", line 85, in <module>
+    main()
+  File "<repo>/02_gerar_embeddings.py", line 76, in main
+    assert todos.shape == (len(textos), DIM)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

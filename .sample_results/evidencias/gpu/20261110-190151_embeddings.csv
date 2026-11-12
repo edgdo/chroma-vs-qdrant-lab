@@ -1,0 +1,2 @@
+timestamp, name, utilization.gpu [%], utilization.memory [%], memory.used [MiB], memory.total [MiB], power.draw [W], temperature.gpu, clocks.current.sm [MHz]
+2026/11/10 19:01:51.524, NVIDIA GeForce RTX 4080, 5 %, 2 %, 6083 MiB, 16376 MiB, 59.81 W, 48, 2565 MHz
